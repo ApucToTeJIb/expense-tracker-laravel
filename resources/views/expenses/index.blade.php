@@ -112,7 +112,7 @@ $categoryIcons = [
 
     <div class="max-w-7xl mx-auto px-4 py-10 space-y-8">
 
-        {{-- ───── HEADER ───── --}}
+        <!-- header -->
         <div class="flex items-center justify-between">
             <div>
                 <h1 class="text-3xl font-bold text-white tracking-tight">💸 Мои расходы</h1>
@@ -124,7 +124,7 @@ $categoryIcons = [
             </div>
         </div>
 
-        {{-- ───── FORM ───── --}}
+        <!-- form -->
         <div class="glass rounded-2xl p-6">
             <h2 class="text-lg font-semibold text-white mb-5 flex items-center gap-2">
                 <span class="w-7 h-7 bg-indigo-500/20 rounded-lg flex items-center justify-center text-indigo-400 text-sm">+</span>
@@ -199,7 +199,7 @@ $categoryIcons = [
             </form>
         </div>
 
-        {{-- ───── ANALYTICS ───── --}}
+        <!-- analytics -->
         @if ($totalAmount > 0)
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
@@ -253,7 +253,7 @@ $categoryIcons = [
         </div>
         @endif
 
-        {{-- ───── TABLE ───── --}}
+        <!-- table -->
         <div class="glass rounded-2xl overflow-hidden">
             <div class="px-6 py-4 border-b border-white/5 flex items-center justify-between">
                 <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-widest">История расходов</h2>
@@ -312,7 +312,7 @@ $categoryIcons = [
 
     </div>
 
-    {{-- ───── CHART.JS INIT ───── --}}
+    <!-- chart.js -->
     @if ($totalAmount > 0)
     <script>
         document.addEventListener('DOMContentLoaded', function() {
